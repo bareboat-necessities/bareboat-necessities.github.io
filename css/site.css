@@ -6,6 +6,10 @@ hr {
   clear: left;
   color: rgb(235, 235, 235);
 }
+li {
+  margin: 16px 0;
+  line-height: 5px;
+}
 .panel {
   text-align: center;
   padding: 30px;
@@ -18,7 +22,8 @@ hr {
 }
 .top-title {
   font-size: 1em;
-  color: rgb(200, 200, 200);
+  color: rgb(180, 180, 180);
+  padding-top: 30px;
 }
 .topbar-item {
   padding: 30px;
@@ -34,4 +39,5 @@ hr {
   font-size: 1.25em;
   text-align: left;
   clear: both;
+  padding-bottom: 30px;
 }
