@@ -2,3 +2,26 @@ html {
   font-family: sans-serif, arial, verdana, helvetica, geneva;
   font-size: 0.75em;
 }
+hr {
+  clear: left;
+  color: rgb(235, 235, 235);
+}
+.panel {
+  text-align: center;
+  padding: 30px;
+  margin: 5px;
+}
+.topbar {
+  margin: 10px;
+  font-size: 1.25em;
+  clear: left;
+}
+.topbar-item {
+  padding: 30px;
+  font-size: 1.25em;
+  float: left;
+}
+.topbar-logo {
+  float: left;
+  padding-bottom: 20px;
+}
