@@ -22,6 +22,11 @@ li {
   font-size: 1em;
   color: rgb(180, 180, 180);
   padding-top: 30px;
+  padding-left: 0px;
+}
+.topbar-header {
+  font-size: 1.25em;
+  float: left;
 }
 .topbar-item {
   padding: 20px;
