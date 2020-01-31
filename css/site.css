@@ -16,6 +16,10 @@ hr {
   font-size: 1.25em;
   clear: left;
 }
+.top-title {
+  font-size: 1em;
+  color: rgb(200, 200, 200);
+}
 .topbar-item {
   padding: 30px;
   font-size: 1.25em;
@@ -23,5 +27,11 @@ hr {
 }
 .topbar-logo {
   float: left;
+  padding-right: 120px;
   padding-bottom: 20px;
+}
+.about {
+  font-size: 1.25em;
+  text-align: left;
+  clear: both;
 }
