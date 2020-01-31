@@ -7,13 +7,12 @@ hr {
   color: rgb(235, 235, 235);
 }
 li {
-  margin: 18px 0;
-  line-height: 5px;
+  margin: 15px 0;
 }
 .panel {
   text-align: center;
-  padding: 30px;
-  margin: 5px;
+  padding: 0px;
+  margin: 20px;
 }
 .topbar {
   margin: 10px;
