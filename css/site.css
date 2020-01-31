@@ -27,6 +27,7 @@ li {
 .topbar-header {
   font-size: 1.25em;
   float: left;
+  padding-top: 20px;
 }
 .topbar-item {
   padding: 20px;
@@ -42,6 +43,7 @@ li {
   font-size: 1.25em;
   text-align: left;
   clear: both;
-  margin: 35px;
+  margin: 20px;
   padding-bottom: 30px;
+  padding-top: 20px;
 }
