@@ -34,6 +34,9 @@ li {
   font-size: 1.25em;
   float: left;
 }
+.topbar-item a {
+  padding-right: 40px;
+}
 .topbar-logo {
   float: left;
   padding-right: 120px;
