@@ -30,7 +30,7 @@ li {
   padding-top: 20px;
 }
 .topbar-item {
-  padding: 20px;
+  margin: 20px;
   font-size: 1.25em;
   float: left;
 }
@@ -47,7 +47,7 @@ li {
   clear: left;
 }
 .bottombar-item {
-  padding: 20px;
+  margin: 20px;
   font-size: 1.25em;
   float: left;
 }
