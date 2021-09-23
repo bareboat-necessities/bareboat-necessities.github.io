@@ -42,6 +42,18 @@ li {
   padding-right: 120px;
   padding-bottom: 20px;
 }
+.bottombar {
+  font-size: 1.25em;
+  clear: left;
+}
+.bottombar-item {
+  padding: 20px;
+  font-size: 1.25em;
+  float: left;
+}
+.bottombar-item a {
+  padding-right: 40px;
+}
 .about {
   font-size: 1.25em;
   text-align: left;
