@@ -1,254 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BBN Projects</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .product-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        .product-card {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin: 10px;
-            padding: 20px;
-            width: 300px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        .product-card h2 {
-            font-size: 1.5em;
-            margin: 10px 0;
-        }
-        .product-card p {
-            font-size: 1em;
-            color: #555;
-        }
-        .slider {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            border-radius: 5px;
-        }
-        .slides {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
-        .slide {
-            min-width: 100%;
-            box-sizing: border-box;
-        }
-        .slide img {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .dots {
-            text-align: center;
-            margin-top: 10px;
-        }
-        .dot {
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            background-color: #bbb;
-            border-radius: 50%;
-            margin: 0 5px;
-            cursor: pointer;
-        }
-        .dot.active {
-            background-color: #333;
-        }
-        .product-card img:not(.slide img) {
-            width: 100%;
-            height: auto;
-            border-radius: 5px;
-        }
-        .learn-more-btn {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1em;
-            cursor: pointer;
-        }
-        .learn-more-btn:hover {
-            background-color: #218838;
-        }
-</style>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="mgrouch"/>
+    <meta name="description" content="Bareboat Necessities - DIY Solutions for Sailors">
+    <meta name="keywords" content="Marine Linux OS, OpenPlotter, bareboat necessities, OpenCPN, SignalK, Raspberry Pi boat computer, DIY, open source chartplotter, sailboat computer">
+    <title>Bareboat Necessities - DIY Solutions for Sailors</title>
+    <link rel="stylesheet" href="css/site.css" type="text/css">
 </head>
 <body>
-
-<div class="product-container">
-    <div class="product-card">
-        <div class="slider">
-            <div class="slides">
-                <div class="slide">
-                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/bbs_os_screens/BBN_OS_Display_3.jpg" alt="BBN OS Instruments Screen">
-                </div>
-                <div class="slide">
-                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/bbs_os_screens/BBN_OS_Display_2.jpg" alt="BBN OS Charts Screen">
-                </div>
-                <div class="slide">
-                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/rpi/BBN_rpi5.jpg" alt="Raspberry Pi Box for BBN OS">
-                </div>
-                <div class="slide">
-                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/bbs_os_screens/BBN_OS_Display_power.jpg" alt="BBN OS Power Monitoring Screen">
-                </div>
-                <div class="slide">
-                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/bbs_os_screens/BBN_OS_Display_9.jpg" alt="BBN OS Home Screen">
-                </div>
-                <div class="slide">
-                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/bbs_os_screens/BBN_OS_Display_3D.jpg" alt="BBN OS Ocearo-UI 3D Screen">
-                </div>
+<div class="panel">
+    <div class="topbar">
+        <div class="topbar-logo">
+            <img src="images/bareboat-necessities-logo.svg" alt="Bareboat Necessities Logo">
+        </div>
+        <div class="topbar-header">
+            <div class="top-title">
+                <h1>BAREBOAT NECESSITIES</h1>
             </div>
         </div>
-        <div class="dots">
-            <span class="dot active" onclick="showSlide(0, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(1, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(2, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(3, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(4, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(5, this.parentElement)"></span>
-        </div>
-        <h2>BBN Marine Linux</h2>
-        <p>Free touchscreen-friendly open source Linux operating system for boats by Bareboat Necessities. Build your own low power consuming
-            chartplotter or autopilot with it. Show other vessels from AIS, set an anchor alarm, see tides and currents, download a
-            weather forecast and overlay it on your chart, decode marine radio transmissions, and much more.</p>
-        <button class="learn-more-btn" onclick="openNewWindow('https://github.com/bareboat-necessities/lysmarine_gen')">Learn More</button>
     </div>
-    <div class="product-card">
-        <div class="slider">
-            <div class="slides">
-                <div class="slide">
-                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-m5stack-tough/refs/heads/main/images/BBN_esp32_marine_display.jpg" alt="BBN ESP32 Marine Display">
-                </div>
-                <div class="slide">
-                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-m5stack-tough/refs/heads/main/images/BBN_m5tough.jpg" alt="BBN M5 Tough">
-                </div>
-                <div class="slide">
-                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-m5stack-tough/refs/heads/main/screenshots/wind.png" alt="Wind Display">
-                </div>
-                <div class="slide">
-                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-m5stack-tough/refs/heads/main/screenshots/victron.png" alt="Victron Integration">
-                </div>
-            </div>
+    <div><hr></div>
+    <div class="topbar">
+        <div class="topbar-item">
+            <a href="https://github.com/bareboat-necessities/lysmarine_gen#what-is-lysmarine-bbn-edition">BBN Marine OS</a>
         </div>
-        <div class="dots">
-            <span class="dot active" onclick="showSlide(0, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(1, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(2, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(3, this.parentElement)"></span>
+        <div class="topbar-item">
+            <a href="https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html">Getting Started</a>
         </div>
-        <h2>Marine Displays and Instruments for esp32</h2>
-        <p>Rugged marine displays and instruments for navigation and monitoring on M5Tough esp32 from M5Stack with free and open source software designed and developed by Bareboat Necessities.</p>
-        <button class="learn-more-btn" onclick="openNewWindow('https://github.com/bareboat-necessities/bbn-m5stack-tough')">Learn More</button>
+        <div class="topbar-item">
+            <a href="https://bareboat-necessities.github.io/my-bareboat/bareboat-os.html#download">Downloads</a>
+        </div>
+        <div class="topbar-item">
+            <a href="https://github.com/bareboat-necessities/lysmarine_gen/discussions">Discussion Forums</a>
+        </div>
+        <div class="topbar-item">
+            <a href="https://github.com/bareboat-necessities/bbn-m5stack-tough">BBN Display for Esp32</a>
+        </div>
+        <div class="topbar-item">
+            <a href="https://github.com/bareboat-necessities/bbn_esp32_sensors_hub">BBN ESP32 Sensors Hub</a>
+        </div>
+        <div class="topbar-item">
+            <a href="https://github.com/bareboat-necessities/bbn_esp32_gpio_sensors_hub">BBN ESP32 GPIO Hub</a>
+        </div>
+        <div class="topbar-item">
+            <a href="https://github.com/bareboat-necessities/bbn-nmea200-m5atom/tree/main/bbn-nmea2000-usb-gw-m5atom">BBN N2K USB Gateway</a>
+        </div>
+        <div class="topbar-item">
+            <a href="https://github.com/bareboat-necessities/bbn-wave-period-esp32">BBN Heave Sensor</a>
+        </div>
+        <div class="topbar-item">
+            <a href="https://github.com/bareboat-necessities/bbn-m5atomS3-lite">BBN NMEA Sensors</a>
+        </div>
+        <div class="topbar-item">
+            <a href="https://github.com/bareboat-necessities/bbn-nmea200-m5atom/tree/main/bbn-nmea2000-env-m5atom">BBN N2K Sensors</a>
+        </div>
+        <div class="topbar-item">
+            <a href="https://github.com/bareboat-necessities/lysmarine_gen/tree/coremp135_bookworm">BBN for CoreMP135</a>
+        </div>
+        <div class="topbar-item">
+            <a href="https://bareboat-necessities.wixsite.com/my-bareboat">Contacts</a>
+        </div>
     </div>
-    <div class="product-card">
-        <div class="slider">
-            <div class="slides">
-                <div class="slide">
-                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-m5-s3-n2k-usb/refs/heads/main/images/M5_AtomS3_lite-NMEA2000-to-USB.jpg" alt="M5 AtomS3 Lite NMEA2000 to USB">
-                </div>
-                <div class="slide">
-                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-m5-s3-n2k-usb/refs/heads/main/images/BBN_NMEA2000_to_USB.jpg" alt="BBN NMEA2000 to USB">
-                </div>
-            </div>
+    <div class="about">
+        <div>
+            Completely open source solution for building a DIY marine computer, a boat LTE/WiFi gateway,
+            and a cockpit chartplotter display from easily obtainable and affordable components.
+            This boat project includes:
         </div>
-        <div class="dots">
-            <span class="dot active" onclick="showSlide(0, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(1, this.parentElement)"></span>
+        <div class="ulist">
+            <ul>
+                <li>
+                    <p>Custom open source marine Linux OS for your boat computer</p>
+                </li>
+                <li>
+                    <p>Waterproof marine touch screen HDMI display</p>
+                </li>
+                <li>
+                    <p>GNSS (GPS, GLONASS, Beidou, Galileo) receiver</p>
+                </li>
+                <li>
+                    <p>Sensors for orientation (gyroscope, accelerometer, compass via IMU)</p>
+                </li>
+                <li>
+                    <p>AIS radar</p>
+                </li>
+                <li>
+                    <p>Environment temperature, barometric pressure, humidity sensors</p>
+                </li>
+                <li>
+                    <p>Connections to the boat instruments such as wind, depth, speed, AIS via NMEA 0183 serial
+                        ports</p>
+                </li>
+                <li>
+                    <p>Boat LTE / 4G Gateway, network storage</p>
+                </li>
+                <li>
+                    <p>Boat WiFi hotspot and a router with WiFi extender and a long range waterproof WiFi antenna</p>
+                </li>
+                <li>
+                    <p>Optional autopilot integration, rudder angle sensor</p>
+                </li>
+                <li>
+                    <p>Other NMEA devices, engine/battery status, bilge pump monitoring, etc</p>
+                </li>
+                <li>
+                    <p>Optional air mouse with a wireless keyboard and a touchpad</p>
+                </li>
+                <li>
+                    <p>Lightning EMI sensor and alarm</p>
+                </li>
+                <li>
+                    <p>RTL-SDR for weather fax, NavTex, satellite weather, AIS, RTL 433, morse code decoder, etc</p>
+                </li>
+                <li>
+                    <p>Boat IoT Integration via MQTT</p>
+                </li>
+                <li>
+                    <p>Music Player</p>
+                </li>
+                <li>
+                    <p>Can be used with Iridium Satellite Modems</p>
+                </li>
+                <li>
+                    <p>Can be used for processing transmissions received from SSB radio via audio interface</p>
+                </li>
+                <li>
+                    <p>Variety of options of using wireless handheld devices such as smart phones and tablets
+                        to connect to boat systems via WiFi and bluetooth. There are many marine applications available
+                        for smart phones and tablets.</p>
+                </li>
+            </ul>
         </div>
-        <h2>NMEA N2K to USB Converters</h2>
-        <p>Low-cost converters for connecting NMEA N2K networks to computers via USB with free and open source firmware.</p>
-        <button class="learn-more-btn" onclick="openNewWindow('https://github.com/bareboat-necessities/bbn-nmea200-m5atom/tree/main/bbn-nmea2000-usb-gw-m5atom')">Learn More</button>
+        <div>The boat computer connected to the waterproof HDMI touchscreen in the cockpit.</div>
     </div>
-    <div class="product-card">
-        <div class="slider">
-            <div class="slides">
-                <div class="slide">
-                    <img src="https://raw.githubusercontent.com/bareboat-necessities/lysmarine_gen/refs/heads/coremp135_bookworm/img/bbn-on-coremp135.png" alt="BBN on CoreMP135">
-                </div>
-                <div class="slide">
-                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/coremp135/CoreMP135.jpg" alt="CoreMP135 N2K and NMEA 0183 ports">
-                </div>
-                <div class="slide">
-                    <img src="https://raw.githubusercontent.com/bareboat-necessities/lysmarine_gen/refs/heads/coremp135_bookworm/img/bbn-coremp135.png" alt="BBN on CoreMP135 Home Screen">
-                </div>
-            </div>
+    <div class="bottombar">
+        <div class="bottombar-item">
+            <a href="/my-bareboat">Boat Computer</a>
         </div>
-        <div class="dots">
-            <span class="dot active" onclick="showSlide(0, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(1, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(2, this.parentElement)"></span>
+        <div class="bottombar-item">
+            <a href="https://github.com/bareboat-necessities/my-bareboat/issues">Boat Computer Issues</a>
         </div>
-        <h2>BBN Marine OS for CoreMP135</h2>
-        <p>Free and open BBN OS customized for low-cost M5Stack CoreMP135 computer featuring pre-configured NMEA N2K and 0183 interfaces with software image by Bareboat Necessities.</p>
-        <button class="learn-more-btn" onclick="openNewWindow('https://github.com/bareboat-necessities/lysmarine_gen/tree/coremp135_bookworm')">Learn More</button>
+        <div class="bottombar-item">
+            <a href="https://github.com/bareboat-necessities/my-bareboat">Documentation Source Repository</a>
+        </div>
     </div>
-    <div class="product-card">
-        <div class="slider">
-            <div class="slides">
-                <div class="slide">
-                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-wave-period-esp32/refs/heads/main/images/BBN-heave-sensor-enclosure.jpg" alt="BBN Heave Sensor Enclosure">
-                </div>
-                <div class="slide">
-                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-wave-period-esp32/refs/heads/main/bbn_wave_freq_m5atomS3/tests/bbn_heave.png" alt="BBN Heave Sensor Display">
-                </div>
-                <div class="slide">
-                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-wave-period-esp32/refs/heads/main/bbn_wave_freq_m5atomS3/tests/wave_results.png" alt="Boat Heave Sensor Convergence">
-                </div>
-            </div>
-        </div>
-        <div class="dots">
-            <span class="dot active" onclick="showSlide(0, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(1, this.parentElement)"></span>
-            <span class="dot" onclick="showSlide(2, this.parentElement)"></span>
-        </div>
-        <h2>BBN Boat Heave Sensor</h2>
-        <p>NMEA XDR boat heave sensor using advanced Kalman filtering of IMU data designed and developed as a free and open source project by Bareboat Necessities.</p>
-        <button class="learn-more-btn" onclick="openNewWindow('https://github.com/bareboat-necessities/bbn-wave-period-esp32')">Learn More</button>
+    <div><hr></div>
+    <div>
+        Copyright © 2020-2025 Bareboat Necessities, All rights reserved
     </div>
 </div>
-
-<script>
-        // JavaScript for the image slider
-        function showSlide(index, dotsContainer) {
-            const slider = dotsContainer.previousElementSibling;
-            const slides = slider.querySelector('.slides');
-            const dots = dotsContainer.querySelectorAll('.dot');
-
-            // Update slide position
-            slides.style.transform = `translateX(${-index * 100}%)`;
-
-            // Update dot states
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
-            });
-        }
-
-        // Function to open a URL in a new window
-        function openNewWindow(url) {
-            window.open(url, '_blank', 'width=800,height=600');
-        }
-
-        // Initialize the first slider
-        showSlide(0, document.querySelector('.product-card .dots'));
-</script>
-
 </body>
 </html>
