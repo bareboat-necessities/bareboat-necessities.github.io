@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page with Image Slider</title>
+    <title>BBN Projects</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -70,7 +70,6 @@
         .dot.active {
             background-color: #333;
         }
-        /* Ensure images in single-image cards are responsive */
         .product-card img:not(.slide img) {
             width: 100%;
             height: auto;
@@ -81,7 +80,40 @@
 <body>
 
 <div class="product-container">
-    <!-- First Card: Image Slider for Images 1, 2, 6, 7 -->
+    <div class="product-card">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/bbs_os_screens/BBN_OS_Display_3.jpg" alt="BBN OS Instruments Screen">
+                </div>
+                <div class="slide">
+                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/bbs_os_screens/BBN_OS_Display_2.jpg" alt="BBN OS Charts Screen">
+                </div>
+                <div class="slide">
+                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/rpi/BBN_rpi5.jpg" alt="Raspberry Pi Box for BBN OS">
+                </div>
+                <div class="slide">
+                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/bbs_os_screens/BBN_OS_Display_power.jpg" alt="BBN OS Power Monitoring Screen">
+                </div>
+                <div class="slide">
+                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/bbs_os_screens/BBN_OS_Display_9.jpg" alt="BBN OS Home Screen">
+                </div>
+                <div class="slide">
+                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/bbs_os_screens/BBN_OS_Display_3D.jpg" alt="BBN OS Ocearo-UI 3D Screen">
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="showSlide(0, this.parentElement)"></span>
+            <span class="dot" onclick="showSlide(1, this.parentElement)"></span>
+            <span class="dot" onclick="showSlide(2, this.parentElement)"></span>
+            <span class="dot" onclick="showSlide(3, this.parentElement)"></span>
+            <span class="dot" onclick="showSlide(4, this.parentElement)"></span>
+            <span class="dot" onclick="showSlide(5, this.parentElement)"></span>
+        </div>
+        <h2>BBN Marine Linux</h2>
+        <p>Free touchscreen-friendly open source Linux operating system for boats by Bareboat Necessities.</p>
+    </div>
     <div class="product-card">
         <div class="slider">
             <div class="slides">
@@ -105,11 +137,9 @@
             <span class="dot" onclick="showSlide(2, this.parentElement)"></span>
             <span class="dot" onclick="showSlide(3, this.parentElement)"></span>
         </div>
-        <h2>Marine Displays and Integration</h2>
-        <p>A collection of rugged marine displays and integration solutions for navigation and monitoring.</p>
+        <h2>Marine Displays and Instruments for esp32</h2>
+        <p>Rugged marine displays and instruments for navigation and monitoring on M5Tough esp32 from M5Stack with free and open source software designed and developed by Bareboat Necessities.</p>
     </div>
-
-    <!-- Second Card: Image Slider for Images 4, 5 -->
     <div class="product-card">
         <div class="slider">
             <div class="slides">
@@ -125,22 +155,44 @@
             <span class="dot active" onclick="showSlide(0, this.parentElement)"></span>
             <span class="dot" onclick="showSlide(1, this.parentElement)"></span>
         </div>
-        <h2>NMEA2000 to USB Converters</h2>
-        <p>Compact and reliable converters for connecting NMEA2000 networks to USB devices.</p>
+        <h2>NMEA N2K to USB Converters</h2>
+        <p>Low-cost converters for connecting NMEA N2K networks to computers via USB with free and open source firmware.</p>
     </div>
-
-    <!-- Third Card: Single Image (Image 3) -->
     <div class="product-card">
-        <img src="https://raw.githubusercontent.com/bareboat-necessities/lysmarine_gen/refs/heads/coremp135_bookworm/img/bbn-on-coremp135.png" alt="BBN on CoreMP135">
-        <h2>BBN on CoreMP135</h2>
-        <p>Marine navigation software running on the CoreMP135 platform.</p>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://raw.githubusercontent.com/bareboat-necessities/lysmarine_gen/refs/heads/coremp135_bookworm/img/bbn-on-coremp135.png" alt="BBN on CoreMP135">
+                </div>
+                <div class="slide">
+                    <img src="https://bareboat-necessities.github.io/my-bareboat/images/bbn-electronics/coremp135/CoreMP135.jpg" alt="CoreMP135 N2K and NMEA 0183 ports">
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="showSlide(0, this.parentElement)"></span>
+            <span class="dot" onclick="showSlide(1, this.parentElement)"></span>
+        </div>
+        <h2>BBN OS for CoreMP135</h2>
+        <p>Free and open BBN OS customized for low-cost M5Stack CoreMP135 computer featuring pre-configured NMEA N2K and 0183 interfaces with software image by Bareboat Necessities.</p>
     </div>
-
-    <!-- Fourth Card: Single Image (Image 8) -->
     <div class="product-card">
-        <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-wave-period-esp32/refs/heads/main/images/BBN-heave-sensor-enclosure.jpg" alt="BBN Heave Sensor Enclosure">
-        <h2>BBN Heave Sensor Enclosure</h2>
-        <p>A robust enclosure for heave sensors in marine applications.</p>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-wave-period-esp32/refs/heads/main/images/BBN-heave-sensor-enclosure.jpg" alt="BBN Heave Sensor Enclosure">
+                </div>
+                <div class="slide">
+                    <img src="https://raw.githubusercontent.com/bareboat-necessities/bbn-wave-period-esp32/refs/heads/main/bbn_wave_freq_m5atomS3/tests/bbn_heave.png" alt="BBN Heave Sensor Display">
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="showSlide(0, this.parentElement)"></span>
+            <span class="dot" onclick="showSlide(1, this.parentElement)"></span>
+        </div>
+        <h2>BBN Heave Sensor</h2>
+        <p>NMEA XDR heave sensor using advanced Kalman filtering of IMU data designed and developed as a free and open source project by Bareboat Necessities.</p>
     </div>
 </div>
 
